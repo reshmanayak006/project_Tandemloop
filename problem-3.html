@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code3</title>
+    <script>
+        //x=number 
+        function output() {
+            var x = document.getElementById("num").value;
+            for (i = 1; i <= (2 * x) - 1; i++) {
+                if (i % 2 == 0) {
+                    if (i > x) {
+                        for (var j = x - (i % x); j >= 1; j--) {
+                            console.log(j);
+                            // console.log("\n");
+
+                        }
+
+                    }
+                    else {
+                        for (j = i; j >= 1; j--) {
+                            console.log(j);
+                            console.log("\n");
+
+                        }
+
+                    }
+                }
+                else {
+                    if (i > x) {
+                        for (j = 1; j <= x - (i % x); j++) {
+                            console.log(j);
+                            console.log("\n");
+
+
+                        }
+
+
+                    }
+                    else {
+                        for (j = 1; j <= i; j++) {
+                            console.log(j);
+
+
+                        }
+                        console.log("\n");
+                    }
+
+
+
+                }
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <label for="">Enter the number:</label>
+    <input type="text" id="num">
+    <input type="button" value="submit" onclick="output()">
+
+</body>
+
+</html>

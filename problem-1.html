@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code1</title>
+    <script>
+        function show() {
+            var n1 = parseFloat(document.getElementById("num1").value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+            var oper = document.getElementById("op").value;
+            //   console.log(n1);
+            //   console.log(n2);
+            if (oper == "+") {
+                var result = n1 + n2;
+                document.write(result);
+                console.log(result);
+            }
+
+            else if (oper == "-") {
+                var result = n1 - n2;
+                document.write(result);
+                console.log(result);
+            }
+
+            else if (oper == "*") {
+                var result = n1 * n2;
+                document.write(result);
+                console.log(result);
+            }
+
+            else if (oper == "/") {
+
+                var result = n1 / n2;
+                document.write(result);
+                console.log(result);
+            }
+
+            else {
+                alert("Please choose between +, -, *, /");
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <label for="">a:</label>
+    <input type="text" class="" id="num1"> &nbsp;
+
+    <label for="">b:</label>
+    <input type="text" class="" id="num2"><br><br>
+
+    <label for="">Type of operator:</label>
+    <input type="text" class="" id="op"><br><br>
+
+    <input type="button" class="" value="submit" onclick="show()">
+
+
+
+
+</body>
+
+</html>

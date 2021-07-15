@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code2</title>
+
+    <script>
+        var num;
+        var time;
+        // function show(){
+        //     var num1=parseInt(document.getElementById("num").value);
+
+        //         for(var i=1; i<10;i++){
+        //             if(num1 %2 !=0){
+
+        //                 // console.log(num1);
+        //                 for(var i=num1; i>0;i++){
+        //                     var i1=i-2;
+        //                     console.log(i1);
+        //                 }
+
+        //             }
+        //             else{
+
+        //             }
+
+        //         }    
+        // }
+        var count;
+        show1 = () => {
+           
+            var time;
+            var num1 = parseInt(document.getElementById("num").value);
+            time=num1;
+            
+            if (num1 % 2 != 0) {
+                for (var i = 1; i <= (2*num1)-1; i++) {
+                    if(i%2!=0){
+                         console.log(i);
+                        //  document.write(i);
+                        time--;
+                        
+                        if(time<=0){
+                            //console.log("hi");
+                            break;
+                           
+                        }  
+
+                    }
+
+                }
+            }
+            else {
+                var num2=num1-1;
+                time=num2;
+                 //console.log(num2);
+                 for(var i=1; i<=(2*num1)-1;i++)
+                 {
+                     if(i%2==0){
+                         i1=i-1;
+                         console.log(i1);
+                        //  document.write(i1);
+                         time--;
+                        // console.log("the time is " +time);
+                         if(time<=0){
+                            //console.log("hi");
+                            break;
+                           
+                        }  
+                     }
+
+                 }
+               
+
+                }
+                
+            }
+
+        
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <label for="">Enter the number:</label>
+    <input type="text" id="num">
+    <input type="button" value="submit" onclick="show1()">
+</body>
+
+</html>
